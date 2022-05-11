@@ -22,4 +22,10 @@
     @content;
   }
 }
+
+@mixin media-minmax($min-breakpoint-name, $max-breakpoint-name)  {
+  @media #{min-width($min-breakpoint-name)} and #{max-width($max-breakpoint-name)} {
+    @content;
+  }
+}
 /* stylelint-enable */
