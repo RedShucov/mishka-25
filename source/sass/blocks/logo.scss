@@ -1,0 +1,11 @@
+.logo__image {
+  @include media-min(md) {
+    width: 113px;
+    height: 46px;
+  }
+
+  @include media-min(xl) {
+    width: 149px;
+    height: 72px;
+  }
+}
