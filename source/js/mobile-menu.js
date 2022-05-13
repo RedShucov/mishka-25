@@ -2,9 +2,12 @@ const hamburger = document.querySelector('.header__hamburger')
 
 const navigation = document.querySelector('.navigation')
 
+const bodyOverflow = document.querySelector('body')
+
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('header__hamburger--open');
   navigation.classList.toggle('navigation--open');
+  bodyOverflow.classList.toggle('show-main-nav');
 })
 
 // Убираю класс, если пользователь ресайзит  окно при открытом мобильном меню

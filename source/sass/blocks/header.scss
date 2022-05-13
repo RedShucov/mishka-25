@@ -30,8 +30,7 @@
   @include media-max(md) {
     display: flex;
     justify-content: center;
-    padding-top: 22px;
-    padding-bottom: 17px;
+    padding: 22px 0;
   }
 
   @include media-min(md) {
