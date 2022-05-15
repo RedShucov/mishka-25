@@ -1,24 +1,35 @@
 .intro-inner {
-  text-align: center;
-  background-color: var(--white-3);
   padding: 73px 0;
+
+  text-align: center;
+
+  background-color: var(--white-3);
 
   @include media-min(md) {
     padding-top: 100px;
     padding-bottom: 75px;
+
+    background-image: url("../img/interface/background/caterpillar-tablet.svg");
+    background-repeat: repeat-x;
+    background-position-y: bottom -13px;
   }
 
   @include media-min(xl) {
     padding-top: 105px;
     padding-bottom: 90px;
+
+    background-image: url("../img/interface/background/caterpillar-desktop.svg");
+    background-position-y: bottom -20px;
   }
 }
 
 .intro-inner__title {
   margin: 0;
+
   font-weight: 700;
   font-size: 27px;
   line-height: 31px;
+  color: var(--black);
 
   @include media-min(md) {
     font-size: 43px;
@@ -30,3 +41,4 @@
     line-height: 58px;
   }
 }
+
