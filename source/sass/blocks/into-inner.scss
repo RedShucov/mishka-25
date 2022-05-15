@@ -11,7 +11,7 @@
 
     background-image: url("../img/interface/background/caterpillar-tablet.svg");
     background-repeat: repeat-x;
-    background-position-y: bottom -13px;
+    background-position: bottom -13px right;
   }
 
   @include media-min(xl) {
@@ -19,7 +19,7 @@
     padding-bottom: 90px;
 
     background-image: url("../img/interface/background/caterpillar-desktop.svg");
-    background-position-y: bottom -20px;
+    background-position: bottom -20px right;
   }
 }
 
@@ -41,4 +41,3 @@
     line-height: 58px;
   }
 }
-
