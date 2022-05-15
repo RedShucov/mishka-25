@@ -40,7 +40,7 @@
   }
 
   @include media-min(md) {
-    align-items: end;
+    align-items: center;
   }
 }
 
@@ -61,6 +61,10 @@
     padding-top: 23px;
   }
 
+  @include media-min(md) {
+    align-items: unset;
+  }
+
   &::before {
     @include media-max(md) {
       content: "";
@@ -78,6 +82,14 @@
 
 .footer__madeby-text {
   margin-right: 27px;
+
+  @include media-min(md) {
+    margin-top: 7px;
+  }
+
+  @include media-min(xl) {
+    margin-right: 30px;
+  }
 }
 
 .footer__madeby-img {
