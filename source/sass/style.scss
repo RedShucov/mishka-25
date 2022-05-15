@@ -1,6 +1,7 @@
 // Mixins
 @import "mixins/media.scss";
 @import "mixins/container.scss";
+@import "mixins/form.scss";
 // Global
 @import "fonts.scss";
 @import "variables.scss";
@@ -16,3 +17,4 @@
 @import "blocks/social-list.scss";
 @import "blocks/navigation.scss";
 @import "blocks/into-inner.scss";
+@import "blocks/form.scss";
