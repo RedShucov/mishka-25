@@ -1,0 +1,1 @@
+const navigationNoJs=document.querySelector(".navigation"),namburgerNoJs=document.querySelector(".header__hamburger");navigationNoJs.classList.remove("navigation--no-js"),namburgerNoJs.classList.remove("header__hamburger--no-js");

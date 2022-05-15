@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Мишка - магазин милых и приятных вязанных изделий ручной работы.">
+  <meta name="keywords" content="Вязанные изделия, вязанные изделия ручной работы, ручная работа, товары ручной работы.">
+  <title>Мишка: каталог</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon@180.png" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__logo logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/interface/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/interface/logo/logo-tablet.svg">
+            <img class="logo__image" src="img/interface/logo/logo-mobile.svg" width="86" height="35" alt="Логотип магазина мишка.">
+          </picture>
+        </a>
+        <nav class="navigation navigation--no-js navigation--mobile">
+          <ul class="navigation__list navigation__list--main">
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">
+                <span class="navigation__text">Каталог товаров</span>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">
+                <span class="navigation__text">Вязание на заказ</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="navigation__list navigation__list--user">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="navigation__text navigation__text--search">Поиск по сайту</span>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="navigation__text navigation__text--cart">Корзина: пока пуста</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="navigation__list navigation__list--more">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="navigation__text">Новые поступления</span>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">
+                <span class="navigation__text">Распродажа</span>
+              </a>
+            </li>
+          </ul>
+          <p class="navigation__advantage">Бесплатная доставка по России</p>
+        </nav>
+        <button class="header__hamburger header__hamburger--no-js">
+          <div class="header__hamburger-inner"></div>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="intro-inner">
+      <h1 class="intro-inner__title">Я каталог</h1>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="footer__logo" href="index.html">
+          <svg class="footer__logo-img" aria-label="На главную." width="102" height="34">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
+        </a>
+        <ul class="footer__social-list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://vk.com/htmlacademy" target="_blank">
+              <svg class="social-list__image" aria-label="Мы в Вконтакте." width="28" height="22">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://www.youtube.com/c/HTMLAcademyRUS" target="_blank">
+              <svg class="social-list__image" aria-label="Мы в Ютубе." width="28" height="22">
+                <use xlink:href="img/sprite.svg#icon-you"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://t.me/htmlacademy" target="_blank">
+              <svg class="social-list__image" aria-label="Мы в Телеграмме." width="28" height="22">
+                <use xlink:href="img/sprite.svg#icon-tg"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__madeby-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <span class="footer__madeby-text">Разработано</span>
+          <svg class="footer__madeby-img" aria-label="HTML academy" width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-academy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/mobile-menu.js"></script>
+  <script src="js/no-script.js"></script>
+</body>
+
+</html>
