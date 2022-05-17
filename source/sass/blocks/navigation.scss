@@ -14,7 +14,7 @@
   @include media-min(md) {
     display: grid;
 
-    grid-template-columns: 1fr 1.1fr;
+    grid-template-columns: 10fr 11fr;
   }
 
   @include media-min(xl) {
