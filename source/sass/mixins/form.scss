@@ -8,24 +8,13 @@
   border-radius: 50%;
   cursor: pointer;
 
+  transition: all 0.3s ease;
+
   appearance: none;
 
   @include media-min(md) {
     width: 50px;
     height: 50px;
-  }
-
-  &:hover {
-    border-color: var(--cyan-3);
-  }
-
-  &:focus {
-    border-color: var(--cyan-3);
-    outline: none;
-  }
-
-  &:active {
-    border-color: var(--black-alpha-3);
   }
 
   &::before {
@@ -51,6 +40,16 @@
   &:checked::before {
     opacity: 1;
   }
+
+  &:hover,
+  &:focus {
+    border-color: var(--cyan-3);
+    outline: none;
+  }
+
+  &:active {
+    border-color: var(--black-alpha-3);
+  }
 }
 
 @mixin checkbox {
@@ -61,6 +60,8 @@
 
   border: 2px solid var(--grey);
   cursor: pointer;
+
+  transition: all 0.3s ease;
 
   appearance: none;
 
@@ -93,10 +94,7 @@
     opacity: 1;
   }
 
-  &:hover {
-    border-color: var(--cyan-3);
-  }
-
+  &:hover,
   &:focus {
     border-color: var(--cyan-3);
     outline: none;
@@ -107,6 +105,7 @@
   }
 }
 
+
 @mixin text {
   padding: 13px 0;
   padding-left: 0;
@@ -116,9 +115,11 @@
   line-height: 18px;
   font-family: inherit;
 
+  background-color: inherit;
   border: none;
   border-bottom: 2px solid var(--black);
-  background-color: inherit;
+
+  transition: all 0.3s ease;
 
   @include media-min(md) {
     padding-right: 19px;
@@ -144,6 +145,7 @@
   }
 }
 
+
 @mixin textarea {
   box-sizing: border-box;
   height: 142px;
@@ -156,6 +158,8 @@
   font-family: inherit;
 
   border: 2px solid var(--grey);
+
+  transition: all 0.3s ease;
 
   resize: none;
 

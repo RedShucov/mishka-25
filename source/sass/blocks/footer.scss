@@ -22,12 +22,16 @@
   }
 }
 
-.footer__logo-img:hover {
-  fill: var(--cyan-4);
-}
+.footer__logo-img {
+  transition: all 0.5s ease;
 
-.footer__logo-img:active {
-  opacity: 0.3;
+  &:hover {
+    fill: var(--cyan-4);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__social-list {
@@ -93,6 +97,8 @@
 }
 
 .footer__madeby-img {
+  transition: all 0.5s ease;
+
   fill: var(--cyan);
 }
 
