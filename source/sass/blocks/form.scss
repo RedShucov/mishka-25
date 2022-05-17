@@ -100,16 +100,10 @@
   line-height: 18px;
   color: var(--black);
 
-  cursor: pointer;
-
   @include media-min(md) {
     font-size: 19px;
     line-height: 18px;
   }
-}
-
-.form__sign-label {
-  cursor: pointer;
 }
 
 .form__fieldset {
@@ -311,6 +305,7 @@
   &::before {
     content: "";
     position: absolute;
+    z-index: -1;
 
     display: block;
 
@@ -362,6 +357,11 @@
 .form__label:hover .form__input-icon::before {
   transition: 0.1s;
   background-color: var(--cyan-3);
+}
+
+.form__label {
+  cursor: pointer;
+  z-index: 1;
 }
 
 .form__section--comment .form__label {
