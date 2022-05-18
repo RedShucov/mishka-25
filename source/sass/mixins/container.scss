@@ -1,6 +1,7 @@
 /* stylelint-disable */
 @mixin container {
   box-sizing: border-box;
+  width: 100%;
   min-width: map-get($widths, sm);
   max-width: calc(map-get($widths, sm) + 200px);
   padding-right: $gap-sm;
