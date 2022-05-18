@@ -2,7 +2,27 @@
 {% set title = 'Мишка' %}
 
 {% block name %}
+<section class="hero">
+  <div class="hero__inner">
+    <div class="container">
+      <h1 class="hero__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
+    </div>
 
-  <h1>Я главная</h1>
+    <div class="hero__catagories">
+      <div class="catagories">
+        <article class="categories__item categories__item--one">
+          <a class="categories__link" href="#">
+            <p class="categories__name">Предметы интерьера</p>
+          </a>
+        </article>
+        <article class="categories__item categories__item--two">
+          <a class="categories__link" href="#">
+            <p class="categories__name">Детские игрушки</p>
+          </a>
+        </article>
+      </div>
+    </div>
 
+  </div>
+</section>
 {% endblock name %}
