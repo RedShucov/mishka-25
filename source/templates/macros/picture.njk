@@ -9,6 +9,8 @@
   desktop_image2x,
   width,
   height,
+  bp_tablet,
+  bp_desktop,
   aria_text,
   type='png',
   webp=false
@@ -18,23 +20,23 @@
 
 {% if tablet_image and desktop_image %}
   {% set adaptive = [{
-    'min_width': '1440',
+    'min_width': bp_desktop,
     'name_image': desktop_image,
     'name_image2x': desktop_image2x
   }, {
-    'min_width': '768',
+    'min_width': bp_tablet,
     'name_image': tablet_image,
     'name_image2x': tablet_image2x
   }] %}
 {% elif tablet_image %}
   {% set adaptive = [{
-    'min_width': '768',
+    'min_width': bp_tablet,
     'name_image': tablet_image,
     'name_image2x': tablet_image2x
   }] %}
 {% elif desktop_image %}
   {% set adaptive = [{
-    'min_width': '1440',
+    'min_width': bp_desktop,
     'name_image': tablet_image,
     'name_image2x': tablet_image2x
   }] %}

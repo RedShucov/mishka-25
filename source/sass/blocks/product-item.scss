@@ -32,12 +32,10 @@
 
   @include media-min(md) {
     min-width: 334px;
-    height: 334px;
   }
 
   @include media-min(xl) {
     min-width: 316px;
-    height: 462px;
   }
 }
 
