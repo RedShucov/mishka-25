@@ -2,7 +2,7 @@
   &::before {
     content: "";
     position: absolute;
-    z-index: 2;
+    z-index: -1;
 
     display: block;
     width: 100%;
@@ -10,8 +10,6 @@
 
     background-color: rgba(45, 52, 64, 0.5);
     opacity: 0;
-
-    transition: all 0.8s ease;
   }
 }
 
@@ -19,6 +17,8 @@
   overflow: hidden;
 
   &::before {
+    z-index: 2;
+
     opacity: 1;
   }
 }
