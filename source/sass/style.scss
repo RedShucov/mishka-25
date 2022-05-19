@@ -2,6 +2,7 @@
 @import "mixins/media.scss";
 @import "mixins/container.scss";
 @import "mixins/form.scss";
+@import "mixins/title.scss";
 // Global
 @import "fonts.scss";
 @import "variables.scss";
@@ -24,3 +25,4 @@
 @import "blocks/hero.scss";
 @import "blocks/categories.scss";
 @import "blocks/product-weekly.scss";
+@import "blocks/about.scss";

@@ -75,5 +75,39 @@
       <a class="product-weekly__button button" href="#">Заказать</a>
     </div>
   </section>
+
+  <section class="about">
+    <h2 class="about__title">Коротко о нас:</h2>
+
+    <ul class="about__features">
+
+      {% set features = [{
+        'text': 'Экологически чистые&nbsp;материалы',
+        'modifier': 'eco'
+      }, {
+        'text': 'Связано вручную с&nbsp;любовью&nbsp;и&nbsp;умилением',
+        'modifier': 'hand'
+      }, {
+        'text': 'Скандинавский стиль по&nbsp;российской&nbsp;цене',
+        'modifier': 'style'
+      }, {
+        'text': 'Поддержка отечественного производителя',
+        'modifier': 'homeland'
+      }, {
+        'text': 'Увеличивает лайки на&nbsp;фотографиях',
+        'modifier': 'likes'
+      }, {
+        'text': 'Поставляется в&nbsp;подарочной&nbsp;упаковке',
+        'modifier': 'gift'
+      }] %}
+
+      {% for feature in features %}
+        <li class="about__features-item about__features-item--{{ feature.modifier }}">
+          <p class="about__text">{{ feature.text | safe }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </section>
 </div>
 {% endblock name %}
