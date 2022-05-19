@@ -22,7 +22,58 @@
         </article>
       </div>
     </div>
-
   </div>
 </section>
+
+<div class="container">
+  <section class="product-weekly">
+    <div class="product-weekly__title-row">
+      <h2 class="product-weekly__title">Вязаные корзинки</h2>
+      <span class="product-weekly__attention">Товар недели</span>
+    </div>
+
+    <div class="product-weekly__description">
+      <p class="product-weekly__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+
+      <dl class="product-weekly__description-list">
+        <div class="product-weekly__description-row">
+          <dt class="product-weekly__definition">Цвет:</dt>
+          <dd class="product-weekly__value">тиффани/серый</dd>
+        </div>
+        <div class="product-weekly__description-row">
+          <dt class="product-weekly__definition">Диаметр:</dt>
+          <dd class="product-weekly__value">25 см</dd>
+        </div>
+        <div class="product-weekly__description-row">
+          <dt class="product-weekly__definition">Высота:</dt>
+          <dd class="product-weekly__value">15 см</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="product-weekly__image-wrapper">
+      {{ picture(
+        path_file='img/content/catalog/',
+        class_name='product-weekly__image',
+        mobile_image='triple-set-mobile@1x',
+        mobile_image2x='triple-set-mobile@2x',
+        tablet_image='triple-set-tablet@1x',
+        tablet_image2x='triple-set-tablet@2x',
+        desktop_image='triple-set-desktop@1x',
+        desktop_image2x='triple-set-desktop@2x',
+        width=260,
+        height=315,
+        bp_tablet=bp_tablet,
+        bp_desktop=bp_desktop,
+        type='jpg',
+        webp=true
+      ) }}
+    </div>
+
+    <div class="product-weekly__order">
+      <span class="product-weekly__price">Цена: 990 руб.</span>
+      <a class="product-weekly__button button" href="#">Заказать</a>
+    </div>
+  </section>
+</div>
 {% endblock name %}
