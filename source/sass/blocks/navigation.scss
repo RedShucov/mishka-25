@@ -93,21 +93,21 @@
     position: relative;
 
     grid-column: 2/3;
-    justify-self: end;
+    justify-content: end;
   }
 
   &::after {
     @include media-min(md) {
       content: "";
       position: absolute;
-      right: 0;
+      left: 0;
       bottom: 0;
 
       display: block;
-      width: 200vw;
+      width: 100vw;
 
       border-bottom: 1px solid var(--black-alhpa-1);
-      transform: translateX(50%);
+      margin-left: calc(100vw / -2);
     }
   }
 }
