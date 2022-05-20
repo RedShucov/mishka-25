@@ -80,7 +80,6 @@
     <h2 class="about__title">Коротко о нас:</h2>
 
     <ul class="about__features">
-
       {% set features = [{
         'text': 'Экологически чистые&nbsp;материалы',
         'modifier': 'eco'
@@ -107,7 +106,49 @@
         </li>
       {% endfor %}
     </ul>
+  </section>
 
+  <section class="slider">
+    {% set slides = [{
+      'review': 'Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
+                 у&nbsp;популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                 фотографии сразу стали более стильными, а также набирают больше лайков!',
+      'author': 'Анастасия Красильникова',
+      'tag': '@misssssiskras',
+      'active': true
+    }, {
+      'review': 'Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как
+                 у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                 фотографии сразу стали более стильными, а также набирают больше лайков!',
+      'author': 'Екатерина Красильникова',
+      'tag': '@misssssiskras2'
+    }, {
+      'review': 'Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого
+                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в
+                Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!',
+      'author': 'Елена Красильникова',
+      'tag': '@misssssiskras3'
+    }] %}
+
+    <div class="slider__wrapper">
+      <h2 class="slider__title">Отзывы</h2>
+      <div class="slider__slides">
+        {% for slide in slides %}
+          <div class="slider__slide {% if slide.active %}slider__slide--active{% endif %}">
+            <p class="slider__text">{{ slide.review | safe }}</p>
+            <p class="slider__author">
+              <span class="slider__author-name">{{ slide.author }}</span>
+              <span class="slider__author-tag">{{ slide.tag }}</span>
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="slider__controls">
+        <button class="slider__control slider__control--previous" type="button"></button>
+        <button class="slider__control slider__control--next" type="button"></button>
+      </div>
+      <a class="slider__button button" href="#">Написать</a>
+    </div>
   </section>
 </div>
 {% endblock name %}

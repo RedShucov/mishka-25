@@ -3,6 +3,7 @@
 @import "mixins/container.scss";
 @import "mixins/form.scss";
 @import "mixins/title.scss";
+@import "mixins/separator.scss";
 // Global
 @import "fonts.scss";
 @import "variables.scss";
@@ -26,3 +27,4 @@
 @import "blocks/categories.scss";
 @import "blocks/product-weekly.scss";
 @import "blocks/about.scss";
+@import "blocks/slider.scss";
