@@ -118,7 +118,7 @@
           {% for link in social_links %}
             <li class="social-list__item">
               <a class="social-list__link" href="https://{{ link.url }}" target="_blank">
-                {{ svg('social-list__image', link.svg, link.aria, 28, 22) }}
+                {{ svg('social-list__image', link.svg, link.aria, 30, 22) }}
               </a>
             </li>
           {% endfor %}
@@ -134,6 +134,7 @@
 
   <script src="js/mobile-menu.js"></script>
   <script src="js/no-script.js"></script>
+  {% block js %}{% endblock %}
 </body>
 
 </html>

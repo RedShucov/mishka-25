@@ -70,7 +70,7 @@
 
     <div class="product-weekly__order">
       <span class="product-weekly__price">Цена: 990 руб.</span>
-      <a class="product-weekly__button button" href="#">Заказать</a>
+      <a class="product-weekly__button button-order button" href="catalog.html">Заказать</a>
     </div>
   </section>
 
@@ -173,4 +173,31 @@
     <a class="contacts__button button" href="#">Напишите нам</a>
   </section>
 </div>
+
+<div class="modal" id="modal">
+  <div class="modal__sizes" id="modal-inner">
+    <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+    <p class="modal__text">Выберите размер:</p>
+    <form action="https://echo.htmlacademy.ru" method="GET">
+      <div class="modal__sizes-list">
+        <label class="modal__size">
+          <span class="modal__size-name">S</span>
+          <input class="modal__checkbox" type="checkbox" name="sizes" value="s" checked>
+        </label>
+        <label class="modal__size">
+          <span class="modal__size-name">M</span>
+          <input class="modal__checkbox" type="checkbox" name="sizes" value="m">
+        </label>
+        <label class="modal__size">
+          <span class="modal__size-name">L</span>
+          <input class="modal__checkbox" type="checkbox" name="sizes" value="l">
+        </label>
+      </div>
+      <button class="modal__size-order button" type="submit">Добавить</button>
+    </form>
+  </div>
+</div>
 {% endblock name %}
+{% block js %}
+  <script src="js/modal.js"></script>
+{% endblock %}

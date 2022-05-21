@@ -101,9 +101,10 @@
                 </div>
               {% endfor %}
             </dl>
+
             <div class="product-item__row-order">
               <span class="product-item__price">{{ product.price }}</span>
-              <a class="product-item__order" href="#">
+              <a class="product-item__order button-order" href="#">
                 {{ svg('product-item__order-img', 'icon-order-cart', 'Заказать.', 21, 21) }}
               </a>
             </div>
@@ -113,11 +114,8 @@
     </div>
   </section>
 
-
   <section class="production">
-
     <div class="production__inner">
-
       <div class="production__video">
         {{ picture(
           path_file='img/interface/player/',
@@ -134,7 +132,7 @@
           bp_desktop=bp_desktop,
           type='jpg'
         ) }}
-        {# <video class="production__video-content" src=""></video> #}
+
         <div class="production__video-controls">
           <button class="production__video-play" aria-label="Включить видео."></button>
         </div>
@@ -148,4 +146,31 @@
     </div>
   </section>
 </div>
+
+<div class="modal" id="modal">
+  <div class="modal__sizes" id="modal-inner">
+    <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+    <p class="modal__text">Выберите размер:</p>
+    <form action="https://echo.htmlacademy.ru" method="GET">
+      <div class="modal__sizes-list">
+        <label class="modal__size">
+          <span class="modal__size-name">S</span>
+          <input class="modal__checkbox" type="checkbox" name="sizes" value="s" checked>
+        </label>
+        <label class="modal__size">
+          <span class="modal__size-name">M</span>
+          <input class="modal__checkbox" type="checkbox" name="sizes" value="m">
+        </label>
+        <label class="modal__size">
+          <span class="modal__size-name">L</span>
+          <input class="modal__checkbox" type="checkbox" name="sizes" value="l">
+        </label>
+      </div>
+      <button class="modal__size-order button" type="submit">Добавить</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
+{% block js %}
+  <script src="js/modal.js"></script>
 {% endblock %}
