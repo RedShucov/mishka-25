@@ -1,3 +1,15 @@
+.logo {
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .logo__image {
   @include media-min(md) {
     width: 113px;

@@ -1,8 +1,7 @@
 .contacts {
+  display: grid;
   margin-top: 38px;
   padding-bottom: 39px;
-
-  display: grid;
 
   @include media-min(md) {
     margin-top: 70px;
@@ -10,8 +9,11 @@
   }
 
   @include media-min(xl) {
-    grid-template-columns: repeat(6, 1fr) auto;
+    padding-bottom: 105px;
+
     column-gap: 58px;
+
+    grid-template-columns: repeat(6, 1fr) auto;
     grid-template-rows: repeat(3, min-content);
   }
 }

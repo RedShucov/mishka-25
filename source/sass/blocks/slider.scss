@@ -22,7 +22,12 @@
       width: 350px;
       height: 457px;
 
-      background-image: url("../img/interface/background/review.jpg");
+      background-image: url("../img/interface/background/review@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/interface/background/review@2x.jpg");
+        background-size: 350px 457px;
+      }
     }
 
     @include media-max(xl) {
@@ -150,12 +155,12 @@
 
   @include media-min(md) {
     position: absolute;
-    top: 357px;
+    bottom: 134px;
     right: 0;
   }
 
   @include media-min(xl) {
-    top: 307px;
+    bottom: 190px;
   }
 
   &::before {

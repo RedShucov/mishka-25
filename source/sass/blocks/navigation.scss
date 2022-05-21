@@ -196,6 +196,8 @@
   color: var(--black);
   text-decoration: none;
 
+  transition: all 0.3s ease;
+
   @include media-min(md) {
     padding-top: 32px;
     padding-bottom: 32px;
